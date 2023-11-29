@@ -150,6 +150,7 @@ class Program :
             next_line = input().strip()
         return Program.decortiquer(entree)
     
+    
     def imprimerCaracteristiquesMatrices(m: list[list[int]]):
         """
         Affiche des caractéristiques d'une matrice
@@ -184,13 +185,6 @@ class Program :
         print('\nSa transpose')
         Program.imprimer_matrice(CalculatriceMatrices.transpose(m))
 
-        if CalculatriceMatrices.labyrinthe(m, 0, 0):
-            CalculatriceMatrices.chemin_labyrinthe(m, 0, 0, 1)
-            print()
-            print('C\'est un labyrinthe')
-            print('Solution : ')
-            Program.imprimer_matrice(m)
-            Program.Imprimer_labyrhinthe(m)   
 
     def main():
         """
